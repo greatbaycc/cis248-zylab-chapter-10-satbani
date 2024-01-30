@@ -1,0 +1,18 @@
+import java.util.Scanner; 
+
+public class RemoveSpacesMethod {
+   
+   public String removeSpaces (String userString) {
+      String temp = userString.replace(" ", "");
+      return temp;
+   }
+   
+   public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+      String userString = scanner.nextLine();
+      
+      RemoveSpacesMethod removeMethod = new RemoveSpacesMethod();
+      
+      System.out.println(removeMethod.removeSpaces(userString));
+   }
+}
