@@ -1,0 +1,28 @@
+import java.util.Random;
+
+public class RandomNumbers {
+   int var1;
+   int var2;
+   int var3;
+   
+   public int getVar1() {
+      return var1;
+   }
+   public int getVar2() {
+      return var2;
+   }
+   public int getVar3() {
+      return var3;
+   }
+   
+   public void setRandomValues(int lowVal, int highVal) {
+      Random random = new Random();
+      var1 = random.nextInt(highVal - lowVal + 1) + lowVal;
+      var2 = random.nextInt(highVal - lowVal + 1) + lowVal;
+      var3 = random.nextInt(highVal - lowVal + 1) + lowVal;
+   }
+   
+   public void getRandomValues() {
+      System.out.println("Random values: " + var1 + " " + var2 + " " + var3);
+   }
+}
