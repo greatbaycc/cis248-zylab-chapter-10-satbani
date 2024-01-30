@@ -1,8 +1,8 @@
 # CIS248 zyLAB Chapter 10
 ## Fall 2023 #
 
-- Name:
-- Date:
+- Name: Satbani Dhariwal
+- Date: 01/29/2024
 - zyLAB Challenges to be completed:
   - 10.01 - Flip a coin
   - 10.02 - Remove spaces - methods
