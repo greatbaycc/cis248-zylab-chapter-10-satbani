@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class FlipACoin {
+
+    private static final Random rand = new Random(2); // Unique seed
+    private static final Scanner scanner = new Scanner(System.in);
+
+   
+   public String headsOrTails() {
+      if (rand.nextInt(2) % 2 == 0) {
+         return "heads";
+      }
+      else {
+         return "tails";
+      }
+   }
+   
+   public static void main(String[] args) {
+
+      FlipACoin userCoin = new FlipACoin();
+      int amtDecisions = scanner.nextInt();
+      
+      for (int i = 0; i < amtDecisions; i++) {
+         System.out.println(userCoin.headsOrTails());
+      }
+
+   }
+}
