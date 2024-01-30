@@ -1,0 +1,44 @@
+public class Product {
+   // Build Product class with public methods and private fields listed above
+   private String code;
+   private double price;
+   private int inventory;
+   
+   public Product(String c, double p, int count) {
+      code = c;
+      price = p;
+      inventory = count;
+   }
+   
+   public void setCode(String c) {
+      code = c;
+   }
+   
+   public String getCode() {
+      return code;
+   }
+   
+   public void setPrice(double p) {
+      price = p;
+   }
+   
+   public double getPrice() {
+      return price;
+   }
+   
+   public void setCount(int count) {
+      inventory = count;
+   }
+   
+   public int getCount() {
+      return inventory;
+   }
+   
+   public void addInventory(int amt) {
+      inventory += amt;
+   }
+   
+   public void sellInventory(int amt) {
+      inventory -= amt;
+   }
+}
